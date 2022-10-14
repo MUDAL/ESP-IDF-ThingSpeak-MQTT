@@ -22,8 +22,9 @@ In this project, an ``ESP32`` is used to publish data (humidity and temperature)
 3,4 and 5 are credentials that will be automatically generated for you once you create an MQTT device in ThingSpeak.
 
 ## MQTT format to publish data to ThingSpeak broker  
-Topic: ``channels/<channel_id>/publish`` e.g. ``channels/1807856/publish``
-Data: ``field<x>=<val1>&field<y>=<val2>`` e.g. ``field1=55&field2=70``
+Topic: ``channels/<channel_id>/publish`` e.g. ``channels/1807856/publish``  
+Data: ``field<x>=<val1>&field<y>=<val2>`` e.g. ``field1=55&field2=70``  
+The ``Topic`` and ``Data`` strings above will be passed as arguments to the ``esp_mqtt_client_publish()`` function in order to publish data to the broker.  
 
 ## Resources to setup MQTT communication with ThingSpeak broker  
 1. Publishing to ThingSpeak broker: https://www.mathworks.com/help/thingspeak/use-desktop-mqtt-client-to-publish-to-a-channel.html    
