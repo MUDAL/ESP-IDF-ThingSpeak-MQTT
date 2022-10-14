@@ -59,8 +59,8 @@ In this project, an ``ESP32`` is used to publish data (humidity and temperature)
 ![Screenshot (278)](https://user-images.githubusercontent.com/46250887/195921988-7fdc9fb4-5729-46ce-ab13-ef64d2ef9274.png)  
 
 ## MQTT format to publish data to ThingSpeak broker  
-Topic: ``channels/<channel_id>/publish`` e.g. ``channels/1807856/publish``  
-Data: ``field<x>=<val1>&field<y>=<val2>`` e.g. ``field1=55&field2=70``  
+1. Topic: ``channels/<channel_id>/publish`` e.g. ``channels/1807856/publish``  
+2. Data: ``field<x>=<val1>&field<y>=<val2>`` e.g. ``field1=55&field2=70``  
 The ``Topic`` and ``Data`` strings above will be passed as arguments to the ``esp_mqtt_client_publish()`` function in order to publish data to the broker.  
 
 ## Resources to setup MQTT communication with ThingSpeak broker  
