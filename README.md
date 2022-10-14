@@ -48,11 +48,11 @@ In this project, an ``ESP32`` is used to publish data (humidity and temperature)
 
 7. Select ``Plain Text (*.txt)``   
 
-![Uploading Screenshot (276).png…]()  
+![Screenshot (276)](https://user-images.githubusercontent.com/46250887/195922301-02d008b8-8691-458f-8e38-ec9c7bfd2025.png)    
 
 8. Click ``Done``
 
-![Uploading Screenshot (277).png…]()  
+![Screenshot (277)](https://user-images.githubusercontent.com/46250887/195922356-801d63c0-52e2-42ce-951b-561e458a28e0.png)   
 
 9. View the ``MQTT device`` you just created, confirm its name  
 
