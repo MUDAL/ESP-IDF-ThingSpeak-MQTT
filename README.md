@@ -11,6 +11,20 @@ In this project, an ``ESP32`` is used to publish data (humidity and temperature)
 
 ## MQTT protocol   
 
+
+## Important parameters for MQTT communication with ThingSpeak
+1. ``Broker URI``: mqtt://mqtt3.thingspeak.com    
+2. ``Port``: 1883    
+3. ``Username``    
+4. ``Client ID``   
+5. ``Password``  
+
+3,4 and 5 are credentials that will be automatically generated for you once you create an MQTT device in ThingSpeak.
+
+## MQTT format to publish data to ThingSpeak broker  
+Topic: ``channels/<channel_id>/publish`` e.g. ``channels/1807856/publish``
+Data: ``field<x>=<val1>&field<y>=<val2>`` e.g. ``field1=55&field2=70``
+
 ## Resources to setup MQTT communication with ThingSpeak broker  
 1. Publishing to ThingSpeak broker: https://www.mathworks.com/help/thingspeak/use-desktop-mqtt-client-to-publish-to-a-channel.html    
 2. Getting MQTT client credentials from ThingSpeak: https://www.mathworks.com/help/thingspeak/mqtt-basics.html     
