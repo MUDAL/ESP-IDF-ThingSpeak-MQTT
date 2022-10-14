@@ -19,7 +19,44 @@ In this project, an ``ESP32`` is used to publish data (humidity and temperature)
 4. ``Client ID``   
 5. ``Password``  
 
-3,4 and 5 are credentials that will be automatically generated for you once you create an MQTT device in ThingSpeak.
+3,4 and 5 are credentials that will be automatically generated for you once you create an MQTT device in ThingSpeak. Save these credentials as they'd be used in the code to communicate with the broker.  
+
+## How to create an MQTT device in ThingSpeak  
+1. Click on the ``Devices`` tab and click on ``MQTT`  
+
+![Screenshot (270)](https://user-images.githubusercontent.com/46250887/195920624-40248e79-d28b-4f98-976e-9f6ccf819af7.png)  
+
+2. Click on ``Add a new device``  
+
+![Screenshot (271)](https://user-images.githubusercontent.com/46250887/195920789-2b783723-e224-472b-8210-b34632e3d1eb.png)
+
+3. Enter a name for the device  
+
+![Screenshot (272)](https://user-images.githubusercontent.com/46250887/195920902-fe5a3d45-97bc-4fc5-a40a-378782c7df1e.png)
+
+4. Associate a channel with the device  
+
+![Screenshot (273)](https://user-images.githubusercontent.com/46250887/195921133-c5c7e6b4-af54-4d48-ba9c-8aa79f350122.png)  
+
+5. Click on ``Add Channel``  
+
+![Screenshot (274)](https://user-images.githubusercontent.com/46250887/195921339-8d65c45f-0c32-44ce-ae90-24ad588bf7a9.png)  
+
+6. Click on ``Download Credentials``    
+
+![Screenshot (275)](https://user-images.githubusercontent.com/46250887/195921518-9e6ee483-b41b-4078-bb2e-51815bbc32c6.png)  
+
+7. Select ``Plain Text (*.txt)``   
+
+![Uploading Screenshot (276).png…]()  
+
+8. Click ``Done``
+
+![Uploading Screenshot (277).png…]()  
+
+9. View the ``MQTT device`` you just created, confirm its name  
+
+![Screenshot (278)](https://user-images.githubusercontent.com/46250887/195921988-7fdc9fb4-5729-46ce-ab13-ef64d2ef9274.png)  
 
 ## MQTT format to publish data to ThingSpeak broker  
 Topic: ``channels/<channel_id>/publish`` e.g. ``channels/1807856/publish``  
