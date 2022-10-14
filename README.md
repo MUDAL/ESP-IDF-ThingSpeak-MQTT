@@ -22,7 +22,7 @@ In this project, an ``ESP32`` is used to publish data (humidity and temperature)
 3,4 and 5 are credentials that will be automatically generated for you once you create an MQTT device in ThingSpeak. Save these credentials as they'd be used in the code to communicate with the broker.  
 
 ## How to create an MQTT device in ThingSpeak  
-1. Click on the ``Devices`` tab and click on ``MQTT`  
+1. Click on the ``Devices`` tab and click on ``MQTT``  
 
 ![Screenshot (270)](https://user-images.githubusercontent.com/46250887/195920624-40248e79-d28b-4f98-976e-9f6ccf819af7.png)  
 
