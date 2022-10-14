@@ -10,7 +10,7 @@ In this project, an ``ESP32`` is used to publish data (humidity and temperature)
 4. Visual Studio Code  
 
 ## MQTT protocol   
-
+MQTT involves communication between a ``client`` and a ``broker``. You can think of the broker as a server that receives data from client(s) and also sends data to the client(s). The term used to describe data transmission from a client to a broker is called ``publishing`` i.e. the client ``publishes`` data to a ``topic`` of the broker. When a client ``subscribes`` to a ``topic``, it means the client will receive data from the broker based on that topic. See ``https://mqtt.org/`` for more information.  
 
 ## Important parameters for MQTT communication with ThingSpeak
 1. ``Broker URI``: mqtt://mqtt3.thingspeak.com    
@@ -63,7 +63,11 @@ In this project, an ``ESP32`` is used to publish data (humidity and temperature)
 2. Data: ``field<x>=<val1>&field<y>=<val2>`` e.g. ``field1=55&field2=70``  
 The ``Topic`` and ``Data`` strings above will be passed as arguments to the ``esp_mqtt_client_publish()`` function in order to publish data to the broker.  
 
+## Visualizing data from the sensor  
+The sensor readings can be visualized in the ``channel`` that was associated with the ``MQTT device`` created. 
+
 ## Resources to setup MQTT communication with ThingSpeak broker  
 1. Publishing to ThingSpeak broker: https://www.mathworks.com/help/thingspeak/use-desktop-mqtt-client-to-publish-to-a-channel.html    
 2. Getting MQTT client credentials from ThingSpeak: https://www.mathworks.com/help/thingspeak/mqtt-basics.html     
 3. ESP-IDF MQTT documentation: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/protocols/mqtt.html    
+
