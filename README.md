@@ -10,7 +10,7 @@ In this project, an ``ESP32`` is used to publish data (humidity and temperature)
 4. Visual Studio Code  
 
 ## MQTT protocol   
-MQTT involves communication between a ``client`` and a ``broker``. You can think of the broker as a server that receives data from client(s) and also sends data to the client(s). The term used to describe data transmission from a client to a broker is called ``publishing`` i.e. the client ``publishes`` data to a ``topic`` of the broker. When a client ``subscribes`` to a ``topic``, it means the client will receive data from the broker based on that topic. See ``https://mqtt.org/`` for more information.  
+MQTT involves communication between a ``client`` and a ``broker``. You can think of the broker as a server that receives data from client(s) and also sends data to the client(s). The term used to describe data transmission from a client to a broker is called ``publishing`` i.e. the client ``publishes`` data to a ``topic`` of the broker. When a client ``subscribes`` to a ``topic``, it means the client will receive data from the broker based on that topic. See https://mqtt.org/ for more information.  
 
 ## Important parameters for MQTT communication with ThingSpeak
 1. ``Broker URI``: mqtt://mqtt3.thingspeak.com    
