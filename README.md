@@ -66,7 +66,7 @@ The ``Topic`` and ``Data`` strings above will be passed as arguments to the ``es
 ## Visualizing data from the sensor  
 The sensor readings can be visualized in the ``channel`` that was associated with the ``MQTT device`` created. 
 
-## Resources to setup MQTT communication with ThingSpeak broker  
+## Additional resources    
 1. Publishing to ThingSpeak broker: https://www.mathworks.com/help/thingspeak/use-desktop-mqtt-client-to-publish-to-a-channel.html    
 2. Getting MQTT client credentials from ThingSpeak: https://www.mathworks.com/help/thingspeak/mqtt-basics.html     
 3. ESP-IDF MQTT documentation: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/protocols/mqtt.html    
