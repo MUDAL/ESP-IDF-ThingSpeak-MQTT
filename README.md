@@ -9,6 +9,30 @@ In this project, an ``ESP32`` is used to publish data (humidity and temperature)
 3. ThingSpeak account  
 4. Visual Studio Code  
 
+## Setting the project up  
+
+Navigate to the include folder and modify the ``#defines``. Fill in the ``name`` and ``password`` your ESP32 should be connected to. Also fill the MQTT parameters (channel ID and configuration parameters). Modify the following (as your parameters won't be the same as mine):  
+1. ``CHANNEL_ID``  
+2. ``USERNAME``  
+3. ``CLIENT_ID``  
+4. ``MQTT_PASSWORD``  
+In order to obtain 2,3 and 4, check the ``How to create an MQTT device in ThingSpeak`` section of this README.  
+Leave the ``URI`` and ``PORT`` as they are.   
+
+```
+//Wi-Fi configuration
+#define SSID                      "YOUR-NETWORK-NAME"
+#define PASS                      "YOUR-NETWORK-PASSWORD"
+//ThingSpeak channel ID
+#define CHANNEL_ID                "1807856"
+//MQTT configuration
+#define URI                       "mqtt://mqtt3.thingspeak.com"
+#define PORT                      1883
+#define USERNAME                  "JRcyGTwBFRUADA4PDC02DzU"
+#define CLIENT_ID                 "JRcyGTwBFRUADA4PDC02DzU"
+#define MQTT_PASSWORD             "sK1axs51JGosiXDFuaT2z4hi"
+```
+
 ## MQTT protocol   
 MQTT involves communication between a ``client`` and a ``broker``. You can think of the broker as a server that receives data from client(s) and also sends data to the client(s). The term used to describe data transmission from a client to a broker is called ``publishing`` i.e. the client ``publishes`` data to a ``topic`` of the broker. When a client ``subscribes`` to a ``topic``, it means the client will receive data from the broker based on that topic. See https://mqtt.org/ for more information.  
 
