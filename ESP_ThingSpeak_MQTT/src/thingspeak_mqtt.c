@@ -43,7 +43,7 @@ static void integer_to_string(uint32_t integer, char* string)
  */
 static void prevent_client_data_buffer_overflow(thingspeak_mqtt_client_t* client_struct)
 {
-  if(client_struct->num_of_set_fields >= MAX_NUMBER_OF_FIELDS)
+  if(client_struct->num_of_set_fields == (MAX_NUMBER_OF_FIELDS - 1))
   {
     ESP_LOGI("RESET BROKER DATA","resetting after %d\n fields were set\n",client_struct->num_of_set_fields);
     //Resetting buffer containing data to send to broker
