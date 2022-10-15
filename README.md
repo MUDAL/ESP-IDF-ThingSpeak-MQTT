@@ -64,7 +64,9 @@ MQTT involves communication between a ``client`` and a ``broker``. You can think
 The ``Topic`` and ``Data`` strings above will be passed as arguments to the ``esp_mqtt_client_publish()`` function in order to publish data to the broker.  
 
 ## Visualizing data from the sensor  
-The sensor readings can be visualized in the ``channel`` that was associated with the ``MQTT device`` created. 
+The sensor readings can be visualized in the ``channel`` that was associated with the ``MQTT device`` created.   
+
+![Screenshot (279)](https://user-images.githubusercontent.com/46250887/195977935-80f2ad39-8c9c-419d-b8bf-46f7f4c05f48.png)  
 
 ## Additional resources    
 1. Publishing to ThingSpeak broker: https://www.mathworks.com/help/thingspeak/use-desktop-mqtt-client-to-publish-to-a-channel.html    
